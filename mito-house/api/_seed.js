@@ -7,7 +7,7 @@ const CATS = [
   ["hamburguesas","Hamburguesas","🍔"],["ensaladas","Ensaladas","🥗"],["kids","Kids","🍟"],
   ["cocteles","Cocteles House","🍹"],["micheladas","Micheladas","🍺"],["limonadas","Limonadas","🍋"],
   ["frapes","Frapés","🧊"],["sodas","Sodas","🥤"],["gaseosas","Bebidas Gaseosas","🥤"],
-  ["cervezas","Cervezas","🍺"],["shots","Shots","🥃"],["sangria","Sangría","🍷"],["licores","Nuestros Licores","🍾"]
+  ["cervezas","Cervezas","🍺"],["shots","Shots","🥃"],["licores","Nuestros Licores","🍾"]
 ].map(([id, n, e]) => ({ id, n, e }));
 
 // IMPORTANTE: el orden de los primeros 19 (pastas..kids) no se debe cambiar: fija sus ids b1..b19.
@@ -53,8 +53,7 @@ const D = {
   gaseosas: [["Gaseosa 350 ml","",6000],["Soda","",5000],["Agua","",5500],["Hatsú","",12000],["Cola & Pola","",6000]],
   cervezas: [["Coronita","",8500],["Budweiser","",7000],["Smirnoff","",14000],["Águila Light y Original","",7000],["Heineken","",7500],["Club Colombia","",7000],["Stella Artois","",8500]],
   shots: [["Olpard 12 Años","",20000],["Bucanas 12 Años","",22000],["Aguardiente","",15000],["Ron","",15000],["Tequila","",20000],["Baileys","",20000],["Vocka Adsolut","",20000]],
-  sangria: [["Sangría","",68000]],
-  licores: [["Bucanas 12 Años Lt","",320000],["Bucanas 12 Años 750 ml","",270000],["Baileys Lt","",200000],["Baileys 750 ml","",153000],["Champaña Jp","",120000],["Champaña Lambrusco","",97000],["Vino Gato Negro","",125000],["Vino Casillero del Diablo","",125000],["Tequila José Cuervo","",220000],["Tequila Don Julio Reposado","",320000],["Tequila Don Julio Blanco","",300000],["Voka Adsolut","",217000],["Ginebra Beefeater","",240000],["Ginebra Tanqueray","",300000],["Ron Caldas Lt","",130000],["Ron Caldas 750 ml","",95000],["Aguardiente Lt","",135000],["Aguardiente 750 ml","",95000]]
+  licores: [["Bucanas 12 Años Lt","",320000],["Bucanas 12 Años 750 ml","",270000],["Baileys Lt","",200000],["Baileys 750 ml","",153000],["Champaña Jp","",120000],["Champaña Lambrusco","",97000],["Vino Gato Negro","",125000],["Vino Casillero del Diablo","",125000],["Tequila José Cuervo","",220000],["Tequila Don Julio Reposado","",320000],["Tequila Don Julio Blanco","",300000],["Voka Adsolut","",217000],["Ginebra Beefeater","",240000],["Ginebra Tanqueray","",300000],["Ron Caldas Lt","",130000],["Ron Caldas 750 ml","",95000],["Aguardiente Lt","",135000],["Aguardiente 750 ml","",95000],["Sangría","",68000]]
 };
 const em = Object.fromEntries(CATS.map((c) => [c.id, c.e]));
 let i = 0;
